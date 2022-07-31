@@ -3,11 +3,12 @@ class DneSequence
   attr_accessor :input_array, :dne_sequences_result, :len
 
   validates :input_array, presence: true
+  validates_length_of :input_array, minimum: 3
 
   def initialize(input_array)
     @input_array = input_array
     @dne_sequences_result = []
-    @len = input_array.length
+    @len = input_array&.length
   end
 
   def calc_sequences

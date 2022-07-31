@@ -20,3 +20,7 @@ curl -X POST http://localhost:3000/server -H "content-type:application/json" -d 
 ```
 
 Running tests:
+
+```bash
+rspec test/models/dne_sequence_test.rb
+```
