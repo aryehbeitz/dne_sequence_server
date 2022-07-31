@@ -1,7 +1,7 @@
-require "test_helper"
+require 'rails_helper'
 
-class DneSequenceTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+RSpec.describe DneSequence, :type => :model do
+  it "is valid with valid attributes" do
+    expect(DneSequence.new([1,2,3])).to be_valid
+  end
 end

@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version: `2.7.2`  
+Rails version `6.1.6.1`
 
-Things you may want to cover:
+Install deps: `bundle`
 
-* Ruby version
+Run server: `rails s`
 
-* System dependencies
+Example for success:
 
-* Configuration
+```bash
+curl -X POST http://localhost:3000/server -H "content-type:application/json" -d '{"seq":[4, 1, 7, 8, 7, 2]}'
+```
 
-* Database creation
+Example for fail:
 
-* Database initialization
+```bash
+curl -X POST http://localhost:3000/server -H "content-type:application/json" -d '{"seq":[1, 2, 3]}'
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Running tests:
