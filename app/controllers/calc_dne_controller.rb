@@ -1,0 +1,2 @@
+class CalcDneController < ApplicationController
+end
