@@ -1,2 +1,0 @@
-class CalcDneController < ApplicationController
-end
